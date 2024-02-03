@@ -10,14 +10,14 @@
         text-align: center;
     }
     &__social-title {
-        color: rgb(22, 29, 47);
+        color: var(--text-main);
 
         font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
         font-weight: 800;
         line-height: 36px;
     }
     &__social-description {
-        color: rgb(34, 34, 34);
+        color: var(--text-main);
 
         font-size: clamp(0.75rem, 0.697rem + 0.27vw, 0.938rem);
         font-weight: 300;
@@ -50,7 +50,7 @@
     }
     &__item {}
     &__item-title {
-        color: rgb(22, 29, 47);
+        color: var(--text-main);
 
         font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
         font-weight: 500;
@@ -72,7 +72,7 @@
 
     &__bottom {
         margin: clamp(1.563rem, 1.296rem + 1.33vw, 2.5rem) 0 0 0;
-        color: rgb(34, 34, 34);
+        color: var(--text-main);
         
         font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
         font-weight: 400;
