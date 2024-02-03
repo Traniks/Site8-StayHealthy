@@ -1,5 +1,7 @@
-import { block } from './blocks/block'
+import { burger } from './blocks/burger'
+import { slider } from './blocks/slider'
 
 document.addEventListener('DOMContentLoaded', () => {
-	block()
+	burger();
+	slider();
 })

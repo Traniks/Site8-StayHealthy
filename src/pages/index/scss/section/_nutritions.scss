@@ -1,0 +1,114 @@
+.nutritions {
+    padding: clamp(2.5rem, 1.429rem + 5.36vw, 6.25rem) 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    &__photo {
+        position: relative;
+        &-img {
+            width: 100%;
+        }
+    }
+
+    .card {
+        display: flex;
+        position: absolute;
+
+        width: clamp(8.75rem, 7.679rem + 5.36vw, 12.5rem);
+        height: clamp(2.5rem, 2.143rem + 1.79vw, 3.75rem);
+        border-radius: 10px;
+        
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+        font-weight: 400;
+        text-transform: capitalize;
+
+        color: var(--text-second);
+        background: var(--bg-second);
+
+        img {
+            width: clamp(1.5rem, 1.321rem + 0.89vw, 2.125rem);
+            height: clamp(1.5rem, 1.321rem + 0.89vw, 2.125rem);
+        }
+
+        &__left {
+            left: 0;
+            top: 0;
+        }
+
+        &__right {
+            right: 0;
+            bottom: 6px;
+        }
+    }
+
+    &__content {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    &__content-title {
+        color: var(--text-main);
+
+        font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__content-subtitle {
+        margin: clamp(0rem, -0.179rem + 0.89vw, 0.625rem) 0 0 0;
+        
+        color: var(--text-main);
+    
+        font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+        font-weight: 600;
+        line-height: 150%;
+        text-wrap: balance;
+        text-transform: capitalize;
+    }
+
+    &__content-description {
+        color: var(--text-main);
+
+        font-size: clamp(0.688rem, 0.616rem + 0.36vw, 0.938rem);
+        font-weight: 300;
+        line-height: 200%;
+        text-transform: capitalize;
+
+        span {
+            color: #161D2F;
+            font-weight: 500;
+            line-height: 30px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__btn {
+        margin: clamp(0.938rem, 0.67rem + 1.34vw, 1.875rem) auto 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .nutritions {
+        &__wrapper {
+            flex-direction: row;
+            gap: 94px;
+        }
+        .card {
+            &__right {
+                right: -34px;
+            }
+        }
+        &__content {
+            max-width: 445px;
+        }
+    }
+}

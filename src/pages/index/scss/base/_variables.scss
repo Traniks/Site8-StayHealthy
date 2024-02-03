@@ -1,30 +1,25 @@
 :root {
     // background
-    --bg-main: #000000;
-    --bg-second: rgba(255, 255, 255, 0.08);
-
-    // table
-    --table: #97979736;
-    --table-bg: rgba(0, 0, 0, 0.5);
+    --bg-main: #ffffff;
+    --bg-second: #161D2F;
+    --bg-second-transparent: rgba(22, 29, 47, 0.95);
 
     //text
-    --text-main: #ffffff;
-    --text-active: #FFB548;
+    --text-main: #000000;
+    --text-main_grey: #4B4B4B;
+    --text-second: #ffffff;
 
-    // input
-    --input: #979797;
-    --input-text: #FFB548;
+    // link
+    --link-text: #3043A9;
 
     //btn
-    --btnColor-default_bg: #FFB548;
-    --btnColor-default_text: #1A1917;
+    --btnColor-bg_default: linear-gradient(97deg, #3043A9 11.99%, #1F629F 96.6%);
+    --btnColor-text_default: #ffffff;
 
-    --btnColor-hover_bg: #ffffff;
-    --btnColor-hover_text: #1A1917;
-
-    --btnColor-focus_bg: #FFB548;
-    --btnColor-focus_text: #1A1917;
-    --btnBorder-focus_border: #ffffff;
+    // input
+    --input: #00000000;
+    --input-border: #ffffff;
+    --input-text: #ffffff;
 
     // z-index
     --index-elem-1: 1; // Для наползающих элементов

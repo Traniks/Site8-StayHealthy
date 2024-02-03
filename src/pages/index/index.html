@@ -4,17 +4,523 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/index.scss">
-    <title>Title</title>
+    <title>StayHealthy</title>
 </head>
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+
+                <a href="#" class="header__logo">StayHealthy</a>
+
+                <div class="header__menu" data-burger="menu">
+
+                    <nav class="header__nav">
+                        <lu class="header__list">
+
+                            <!-- item-1 -->
+                            <li class="header__list-item header__list-item_active">
+                                <a href="#home">Home</a>
+                            </li>
+
+                            <!-- item-2 -->
+                            <li class="header__list-item">
+                                <a href="#program">Program</a>
+                            </li>
+
+                            <!-- item-3 -->
+                            <li class="header__list-item">
+                                <a href="#nutritions">Nutritions</a>
+                            </li>
+
+                            <!-- item-4 -->
+                            <li class="header__list-item">
+                                <a href="#pricing">Pricing</a>
+                            </li>
+
+                            <!-- item-5 -->
+                            <li class="header__list-item">
+                                <a href="#about">About</a>
+                            </li>
+
+                        </lu>
+                    </nav>
+
+                    <a href="#join" class="btn header__link">Join Now</a>
+                    
+                </div>
+
+                <button class="header__burger" data-burger="btn" aria-label="Открыть меню">
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
     <main>
 
-        <section class="first">
+        <!-- section 1 -->
+        <section id="#home" class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
 
+                    <h1 class="hero__title">WELCOME TO THE CLUB</h1>
+                    <h3 class="hero__subtitle">Choose Your Programs,<br>Pick Your Meal,<br>Let’s Get Healthy.</h3>
+                    <p class="hero__description">StayHealty provides Online Training, and Consultation About Diet and Exercise tailored based on user needs. We will provide a training model that can be accessed anytime and anywhere with the best trainers.</p>
+    
+                    <div class="hero__btns">
+                        <a href="#join" class="btn hero__btn">Join Now</a>
+                        <a href="#" class="btn btn_clear hero__btn">Contact Us</a>
+                    </div>
+
+                    <div class="hero__video">
+
+                        <button class="hero__play-btn" aria-label="Play video">
+                            <img loading="lazy" src="./icons/play.svg" alt="play">
+                        </button>
+
+                        <picture>
+                            <img class="hero__img" loading="lazy" src="./img/hero.jpg" alt="hero">
+                        </picture>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section id="#program" class="program">
+            <div class="container">
+                <div class="program__wrapper">
+
+                    <div class="program__top">
+                        <h2 class="program__top-title">PROGRAMS</h2>
+                        <h3 class="program__top-subtitle">We Have a programs to help your workouts</h3>
+                    </div>
+
+                    <div class="program__bottom">
+                        <button class="program__btn program__btn_prev"></button>
+
+                        <div id="swiper-program" class="swiper program-swiper">
+                            <div class="swiper-wrapper program-swiper__wrapper">
+
+                                <!-- slide-1 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-1.jpg" alt="program-1">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Full Body Workout</h4>
+                                        <div class="program-swiper__slide-name">By The Rock</div>
+                                        <p class="program-swiper__slide-description">You can do it in your own home, all in under 30 mins? just need a mat and som. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- slide-2 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-2.jpg" alt="program-2">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Bodyweight Workout</h4>
+                                        <div class="program-swiper__slide-name">By Timi Tarner</div>
+                                        <p class="program-swiper__slide-description">No need equipments, just your body, your soul, and your spirit. You can do. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- slide-3 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-3.jpg" alt="program-3">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Dumbell Workout</h4>
+                                        <div class="program-swiper__slide-name">By Frank Jane</div>
+                                        <p class="program-swiper__slide-description">This is a workout you can do at home just using a set of barbells. The workout is. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- slide-4 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-1.jpg" alt="program-1">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Full Body Workout</h4>
+                                        <div class="program-swiper__slide-name">By The Rock</div>
+                                        <p class="program-swiper__slide-description">You can do it in your own home, all in under 30 mins? just need a mat and som. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- slide-5 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-2.jpg" alt="program-2">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Bodyweight Workout</h4>
+                                        <div class="program-swiper__slide-name">By Timi Tarner</div>
+                                        <p class="program-swiper__slide-description">No need equipments, just your body, your soul, and your spirit. You can do. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- slide-6 -->
+                                <div class="swiper-slide program-swiper__slide">
+
+                                    <picture>
+                                        <img class="program-swiper__slide-img" loading="lazy" src="./img/program-3.jpg" alt="program-3">
+                                    </picture>
+
+                                    <div class="program-swiper__slide-content">
+                                        <h4 class="program-swiper__slide-title">Dumbell Workout</h4>
+                                        <div class="program-swiper__slide-name">By Frank Jane</div>
+                                        <p class="program-swiper__slide-description">This is a workout you can do at home just using a set of barbells. The workout is. . .</p>
+                                        <a href="#" class="program-swiper__slide-link">Check out this program!
+                                            <img src="./icons/arrow-small.svg" alt="arrow-small">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="program__btn program__btn_next"></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section id="#nutritions" class="nutritions">
+            <div class="container">
+                <div class="nutritions__wrapper">
+
+                    <div class="nutritions__photo">
+                        <div class="card card__left">
+                            <img src="./icons/trophy.svg" alt="trophy">
+                            Discipline
+                        </div>
+
+                        <picture>
+                            <img class="nutritions__photo-img" src="./img/nutritions-img.png" alt="nutritions">
+                        </picture>
+
+                        <div class="card card__right">
+                            <img src="./icons/24-hours.svg" alt="24h">
+                            Eating Healthy
+                        </div>
+                    </div>
+
+                    <div class="nutritions__content">
+                        <h2 class="nutritions__content-title">Nutritions</h2>
+                        <h3 class="nutritions__content-subtitle">Meal preparation for workout</h3>
+                        <p class="nutritions__content-description">Don’t worry we have the best nutritionist for your workout, firstly consult with our experts, we can make your meal preparation based on <span>Total Daily Energy Expenditure.</span></p>
+                        <a href="#join" class="btn nutritions__btn">Join Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+        <section id="#pricing" class="pricing">
+            <div class="container">
+
+                <h2 class="pricing__title">PRICING</h2>
+                <h3 class="pricing__subtitle">CHOOSE YOUR PACKAGE FOR WORKOUT</h3>
+
+                <div class="pricing__wrapper">
+
+                    <!-- box-1 -->
+                    <div class="pricing__box">
+
+                        <div class="pricing__box-top">
+                            <h4 class="pricing__box-title">Basic</h4>
+                            <img class="pricing__box-img" src="./img/pricing-1.jpg" alt="basic">
+                            <p class="pricing__box-name">The Rock</p>
+
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-point">3 Times A Week</li>
+                                <li class="pricing__box-point">Full Zoom</li>
+                                <li class="pricing__box-point">PDF Module</li>
+                                <li class="pricing__box-point">Meal Preparation</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing__box-botton">
+                            <div class="pricing__box-price">Rp500.000<span>/month</span></div>
+                            <a href="#join" class="btn pricing__box-btn">Workout Now</a>
+                        </div>
+
+                    </div>
+
+                    <!-- box-2 -->
+                    <div class="pricing__box">
+
+                        <div class="pricing__box-top">
+                            <h4 class="pricing__box-title">Standar</h4>
+                            <img class="pricing__box-img" src="./img/pricing-2.jpg" alt="standar">
+                            <p class="pricing__box-name">Anna Jane</p>
+
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-point">4 Times A Week</li>
+                                <li class="pricing__box-point">Full Zoom</li>
+                                <li class="pricing__box-point">PDF Module</li>
+                                <li class="pricing__box-point">Meal Preparation</li>
+                                <li class="pricing__box-point">Suplement</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing__box-botton">
+                            <div class="pricing__box-price">Rp1.000.000<span>/month</span></div>
+                            <a href="#join" class="btn pricing__box-btn">Workout Now</a>
+                        </div>
+
+                    </div>
+
+                    <!-- box-3 -->
+                    <div class="pricing__box">
+
+                        <div class="pricing__box-top">
+                            <h4 class="pricing__box-title">Premium</h4>
+                            <img class="pricing__box-img" src="./img/pricing-3.jpg" alt="premium">
+                            <p class="pricing__box-name">The Rock</p>
+
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-point">4 Times A Week</li>
+                                <li class="pricing__box-point">Full Zoom</li>
+                                <li class="pricing__box-point">PDF Module</li>
+                                <li class="pricing__box-point">Meal Preparation</li>
+                                <li class="pricing__box-point">Suplement</li>
+                                <li class="pricing__box-point">Gym Equipment</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing__box-botton">
+                            <div class="pricing__box-price">Rp2.000.000<span>/month</span></div>
+                            <a href="#join" class="btn pricing__box-btn">Workout Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section id="#about" class="about">
+            <div class="container">
+
+                <div class="about__top">
+                    <h2 class="about__top-title">ABOUT US</h2>
+                    <h3 class="about__top-subtitle">Benefits of joining with us</h3>
+                </div>
+
+                <ul class="about__statistics">
+
+                    <!-- item-1 -->
+                    <li class="about__statistics-item statistics-item">
+                        <p class="statistics-item__number">5+</p>
+                        <p class="statistics-item__description">Years Of Journey</p>
+                    </li>
+
+                    <!-- item-2 -->
+                    <li class="about__statistics-item statistics-item">
+                        <p class="statistics-item__number">500+</p>
+                        <p class="statistics-item__description">Happy Clients</p>
+                    </li>
+
+                    <!-- item-3 -->
+                    <li class="about__statistics-item statistics-item">
+                        <p class="statistics-item__number">400+</p>
+                        <p class="statistics-item__description">Dedicated Members</p>
+                    </li>
+
+                </ul>
+
+                <ul class="about__list">
+
+                    <!-- item-1 -->
+                    <li class="about__list-item list-item">
+
+                        <img src="./icons/about-1.svg" alt="about-1" class="list-item__img">
+
+                        <div class="list-item__content">
+                            <h4 class="list-item__content-title">flexible class</h4>
+                            <p class="list-item__content-description">you can adapt the class to your busy life very easily Workout every time and everywhere.</p>
+                        </div>
+
+                    </li>
+
+                    <!-- item-2 -->
+                    <li class="about__list-item list-item">
+
+                        <img src="./icons/about-2.svg" alt="about-2" class="list-item__img">
+
+                        <div class="list-item__content">
+                            <h4 class="list-item__content-title">Best Trainers</h4>
+                            <p class="list-item__content-description">Our trainers is very professional, very motivated and funny.</p>
+                        </div>
+
+                    </li>
+
+                    <!-- item-3 -->
+                    <li class="about__list-item list-item">
+
+                        <img src="./icons/about-2.svg" alt="about-2" class="list-item__img">
+
+                        <div class="list-item__content">
+                            <h4 class="list-item__content-title">Track Progress</h4>
+                            <p class="list-item__content-description">See your Progress and workout features for tracking your healthy.</p>
+                        </div>
+
+                    </li>
+
+                    <!-- item-4 -->
+                    <li class="about__list-item list-item">
+
+                        <img src="./icons/about-4.svg" alt="about-4" class="list-item__img">
+
+                        <div class="list-item__content">
+                            <h4 class="list-item__content-title">Meet New Friends</h4>
+                            <p class="list-item__content-description">we have the big classes in the online workout, you can meet our new member for sharing and chill out.</p>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section id="#join" class="join">
+            <div class="container">
+
+                <div class="join__wrapper">
+
+                    <div class="join__content">
+                        <h3 class="join__subtitle">Become a member of this workout class</h3>
+
+                        <form class="join__content-form">
+                            <input type="email" class="join__content-input" name="email" required="" placeholder="Email Address">
+                            <button type="submit" class="join__content-btn btn">Join Now</button>
+                        </form>
+                    </div>
+
+                    <picture class="join__picture">
+                        <source srcset="./img/join.webp" type="image/webp">
+                        <img class="join__picture-img" src="./img/join.png" alt="join picture">
+                    </picture>
+                </div>
+
+            </div>
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__wrapper">
+
+                <div class="footer__social">
+
+                    <h4 class="footer__social-title">StayHealthy</h4>
+                    <div class="footer__social-description">Online Training, and Consultation About Diet and Exercise tailored based on user needs.</div>
+
+                    <ul class="footer__social-wrapper">
+                        <li class="footer__social-item">
+                            <img src="./icons/youtube.svg" alt="youtube">
+                        </li>
+                        <li class="footer__social-item">
+                            <img src="./icons/faceboock.svg" alt="faceboock">
+                        </li>
+                        <li class="footer__social-item">
+                            <img src="./icons/instagram.svg" alt="instagram">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__faq">
+
+                    <!-- item-1 -->
+                    <div class="footer__item">
+                        <div class="footer__item-title">Product</div>
+
+                        <ul class="footer__item-list">
+                            <div class="footer__item-dot">Gym Equipment</div>
+                            <div class="footer__item-dot">Suplement</div>
+                            <div class="footer__item-dot">Blog</div>
+                        </ul>
+                    </div>
+
+                    <!-- item-2 -->
+                    <div class="footer__item">
+                        <div class="footer__item-title">Explore Us</div>
+
+                        <ul class="footer__item-list">
+                            <div class="footer__item-dot">FAQ</div>
+                            <div class="footer__item-dot">Privacy Policy</div>
+                            <div class="footer__item-dot">Term and Conditions</div>
+                        </ul>
+                    </div>
+
+                    <!-- item-3 -->
+                    <div class="footer__item">
+                        <div class="footer__item-title">Contact</div>
+
+                        <ul class="footer__item-list">
+                            <div class="footer__item-dot">hi@stayhealthy.com</div>
+                            <div class="footer__item-dot">021-123-636</div>
+                            <div class="footer__item-dot">stayhealthy.com</div>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">© 2021 StayHealty. All rights reserved</div>
+        </div>
+    </footer>
 
     
     <script src="js/index.js"></script>

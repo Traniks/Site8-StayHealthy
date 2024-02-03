@@ -1,0 +1,117 @@
+.about {
+    padding: clamp(2.5rem, 1.429rem + 5.36vw, 6.25rem) 0;
+
+    &__top {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 490px;
+    }
+    
+    &__top-title {
+        font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+        font-weight: 400;
+        
+        text-transform: uppercase;
+        
+        color: var(--text-main);
+    }
+    
+    &__top-subtitle {
+        margin: clamp(0rem, -0.179rem + 0.89vw, 0.625rem) 0 0 0;
+        
+        font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+        font-weight: 600;
+        line-height: 150%;
+        
+        text-wrap: pretty;
+        text-transform: capitalize;
+
+        color: var(--text-main);
+    }
+
+    &__statistics {
+        display: flex;
+        margin: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem) 0 0 0;
+        justify-content: center;
+    }
+
+    .statistics-item {
+        padding: 0 15px;
+        width: 255px;
+        text-align: center;
+
+        &__number {
+            font-size: clamp(1.75rem, 1.536rem + 1.07vw, 2.5rem);
+            font-weight: 800;
+            line-height: clamp(2.625rem, 2.232rem + 1.96vw, 4rem);
+
+            color: var(--text-main);
+        }
+
+        &__description {
+            font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+            font-weight: 400;
+            line-height: clamp(1.563rem, 1.438rem + 0.63vw, 2rem);
+
+            color: var(--text-main);
+        }
+
+        &:first-child {
+            padding: 0 clamp(0.625rem, 0.536rem + 0.45vw, 0.938rem) 0 0;
+            border-right: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        &:last-child {
+            padding: 0 0 0 clamp(0.625rem, 0.536rem + 0.45vw, 0.938rem);
+            border-left: 1px solid rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &__list {
+        display: grid;
+        margin: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem) 0 0 0;
+        
+        grid-template-columns: repeat(1, 1fr);
+        gap: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+    }
+
+    .list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: clamp(0.938rem, 0.67rem + 1.34vw, 1.875rem);
+
+        &__img {
+            width: clamp(3.125rem, 2.768rem + 1.79vw, 4.375rem);
+        }
+
+        &__content {
+            &-title {
+                font-size: clamp(1.25rem, 1.107rem + 0.71vw, 1.75rem);
+                font-weight: 600;
+        
+                color: var(--text-main);
+        
+                text-transform: capitalize;
+            }
+            
+            &-description {
+                margin: clamp(0rem, -0.089rem + 0.45vw, 0.313rem) 0 0 0;
+                font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+                font-weight: 300;
+                line-height: clamp(1.375rem, 1.232rem + 0.71vw, 1.875rem);
+        
+                color: var(--text-main);
+        
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

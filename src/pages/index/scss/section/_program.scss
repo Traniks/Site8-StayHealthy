@@ -1,0 +1,112 @@
+.program {
+	padding: clamp(2.5rem, 1.429rem + 5.36vw, 6.25rem) 0;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: clamp(0.938rem, 0.67rem + 1.34vw, 1.875rem);
+	}
+
+	&__top {
+		&-title {   
+			font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+			font-weight: 400;
+
+			color: var(--text-main);
+		}
+		&-subtitle {
+			margin: clamp(0rem, -0.179rem + 0.89vw, 0.625rem) 0 0 0;
+			max-width: 590px;
+			text-wrap: pretty;
+
+			font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+			font-weight: 600;
+			line-height: 150%;
+
+			text-transform: capitalize;
+			color: var(--text-main);
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		position: relative;
+		width: 100%;
+		align-items: center;
+		gap: clamp(0.938rem, 0.572rem + 1.83vw, 1.875rem);
+	}
+
+	&__btn {
+		width: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+		height: clamp(1.875rem, 1.732rem + 0.71vw, 2.375rem);
+		border: none;
+		cursor: pointer;
+		
+		background: url("../icons/arrow.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&_next {
+			transform: rotate(-180deg);
+		}
+	}
+
+}
+
+.program-swiper {
+	width: clamp(13.75rem, -0.313rem + 70.31vw, 25rem);
+	&__slide {
+		text-align: start;
+		&-img {
+			border-radius: 10px;
+			width: 100%;
+		}
+
+		&-content {
+			margin: clamp(0.313rem, 0.045rem + 1.34vw, 1.25rem) 0 0 0;
+		}
+
+		&-title {
+			font-size: clamp(1.125rem, 0.911rem + 1.07vw, 1.875rem);
+			font-weight: 500;
+			line-height: 150%;
+			color: var(--text-main);
+		}
+
+		&-name {
+			font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+			font-weight: 400;
+			line-height: 185%;
+			color: var(--text-main);
+		}
+
+		&-description {
+			margin: 10px 0 0 0;
+
+			font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+			font-weight: 300;
+			line-height: 185%;
+			color: var(--text-main_grey);
+		}
+
+		&-link {
+			display: flex;
+			margin: 20px 0 0 0;
+			align-items: center;
+			gap: 10px;
+
+			font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+			font-weight: 400;
+			line-height: 140%;
+			color: var(--link-text);
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.program-swiper {
+		width: 100%;
+	}
+}

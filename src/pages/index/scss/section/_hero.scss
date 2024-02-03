@@ -1,0 +1,90 @@
+.hero {
+	padding: clamp(5rem, 4.107rem + 4.46vw, 8.125rem) 0 clamp(1.5rem, 1.036rem + 2.32vw, 3.125rem) 0;
+	background-color: var(--bg-second);
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		text-align: center;
+
+		color: var(--text-second);
+	}
+
+	&__title {
+		font-size: clamp(0.688rem, 0.634rem + 0.27vw, 0.875rem);
+		font-weight: 400;
+	}
+
+	&__subtitle {
+		margin: 10px 0 0 0;
+		
+		font-size: clamp(1.375rem, 0.661rem + 3.57vw, 3.875rem);
+		font-weight: 700;
+		line-height: 110%;
+		text-transform: capitalize;
+	}
+
+	&__description {
+		margin: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem) 0 0 0;
+
+		max-width: 690px;
+
+		font-size: clamp(0.688rem, 0.616rem + 0.36vw, 0.938rem);
+		font-weight: 300;
+		line-height: 150%;
+		text-transform: capitalize;
+	}
+
+	&__btns {
+		margin: clamp(1rem, 0.75rem + 1.25vw, 1.875rem) 0 0 0;
+		display: flex;
+		gap: 20px;
+	}
+
+	&__video {
+		margin: clamp(1rem, 0.75rem + 1.25vw, 1.875rem) 0 0 0;
+		position: relative;
+	}
+	
+	&__play-btn {
+		position: absolute;
+
+		width: clamp(3rem, 2.357rem + 3.21vw, 5.25rem);
+		height: clamp(3rem, 2.357rem + 3.21vw, 5.25rem);
+		border-radius: 50%;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		border: none;
+		background: rgba(0, 0, 0, 0.4);
+		img {
+			position: absolute;
+
+			width: clamp(2.125rem, 1.786rem + 1.7vw, 3.313rem);
+			height: clamp(2rem, 1.679rem + 1.61vw, 3.125rem);
+
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	&__img {
+		width: clamp(18.125rem, 3.482rem + 73.21vw, 69.375rem);
+		border-radius: 10px;
+	}
+}
+@media(min-width: 768px) {
+	.hero {
+		&__subtitle {
+			line-height: 150%;
+		}
+		&__description {
+			line-height: 200%;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.btn {
+    display: flex;
+    
+    width: clamp(7.375rem, 6.661rem + 3.57vw, 9.875rem);
+    height: clamp(2.625rem, 2.411rem + 1.07vw, 3.375rem);
+
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 28px;
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(0.813rem, 0.723rem + 0.45vw, 1.125rem);
+
+    background: var(--btnColor-bg_default);
+    color: var(--btnColor-text_default);
+    &_clear {
+        font-weight: 300;
+
+        border: 1px solid var(--text-second);
+        background: #00000000;
+    }
+}

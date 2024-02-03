@@ -1,1 +1,104 @@
-.footer {}
+.footer {
+    padding: clamp(2.25rem, 2.036rem + 1.07vw, 3rem) 0 clamp(0.938rem, 0.849rem + 0.44vw, 1.25rem) 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__social {
+        text-align: center;
+    }
+    &__social-title {
+        color: rgb(22, 29, 47);
+
+        font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
+        font-weight: 800;
+        line-height: 36px;
+    }
+    &__social-description {
+        color: rgb(34, 34, 34);
+
+        font-size: clamp(0.75rem, 0.697rem + 0.27vw, 0.938rem);
+        font-weight: 300;
+        line-height: clamp(1.5rem, 1.393rem + 0.53vw, 1.875rem);
+
+        text-transform: capitalize;
+    }
+    &__social-wrapper {
+        margin: 10px 0 0 0;
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    &__social-item {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__faq {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__item {}
+    &__item-title {
+        color: rgb(22, 29, 47);
+
+        font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+        font-weight: 500;
+    }
+    &__item-list {
+        display: flex;
+
+        margin: clamp(0.625rem, 0.447rem + 0.89vw, 1.25rem) 0 0 0;
+
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item-dot {
+        color: rgb(34, 34, 34);
+
+        font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+        font-weight: 300;
+    }
+
+    &__bottom {
+        margin: clamp(1.563rem, 1.296rem + 1.33vw, 2.5rem) 0 0 0;
+        color: rgb(34, 34, 34);
+        
+        font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
+        font-weight: 400;
+        line-height: 26px;
+
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px) {
+    .footer {
+        &__wrapper {
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+        }
+        &__social {
+            text-align: start;
+            width: clamp(18.75rem, 8.454rem + 21.45vw, 27.813rem);
+        }
+        &__social-wrapper {
+            justify-content: start;
+        }
+        &__faq {
+            margin: 0;
+            flex-wrap: unset;
+            gap: clamp(1.875rem, -2.385rem + 8.88vw, 5.625rem);
+        }
+    }
+}
